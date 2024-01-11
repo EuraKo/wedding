@@ -1,0 +1,54 @@
+.intro {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+		object-position: center;
+		position: absolute;
+		&.flower_t_l {
+			width: 245px;
+			transform: rotate(105deg);
+			top: -40px;
+			left: -40px;
+		}
+		&.leaves_t_l_r {
+			width: 300px;
+			transform: rotate(164deg);
+			top: -106px;
+			left: -68px;
+		}
+		&.leaves_t_l_b {
+			width: 290px;
+			transform: rotate(104deg);
+			top: 105px;
+			left: -66px;
+		}
+		&.flower_t_r {
+			width: 280px;
+			transform: rotate(-70deg);
+			top: -39px;
+			right: -21px;
+		}
+		&.flower_b_l {
+			width: 240px;
+			transform: rotate(-70deg);
+			bottom: -61px;
+			left: -21px;
+		}
+		&.leaves_b_r {
+			width: 260px;
+			transform: rotate(63deg);
+			bottom: -9px;
+			right: -73px;
+		}
+		&.flower_b_r {
+			width: 270px;
+			transform: rotate(14deg);
+			bottom: -61px;
+			right: -73px;
+		}
+	}
+}
