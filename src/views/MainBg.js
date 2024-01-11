@@ -19,7 +19,7 @@ const MainBg = (props) => {
 			<img src={leaves} className={`${styles.leaves_b_r} front`} alt='' />
 			<img src={flower} className={`${styles.flower_b_r} front`} alt='' />
 			<img src={leaves} className={`${styles.leaves_t_l_b} back`} alt='' />
-			<img src={flower} className={`${styles.flower_t_r} back`} alt='' />
+			<img src={flower} className={`${styles.flower_t_r} back`} alt='z' />
 		</div>
 	);
 };
