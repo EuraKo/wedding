@@ -1,54 +1,96 @@
+.bg_loading {
+	.front {
+		z-index: 100;
+	}
+}
+.bg_finish_loading {
+	opacity: 50%;
+}
+
 .intro {
 	width: 100%;
 	height: 100%;
 	position: relative;
-
 	img {
 		width: 100%;
 		object-fit: contain;
 		object-position: center;
 		position: absolute;
+		transition: all 1s;
+
 		&.flower_t_l {
 			width: 245px;
-			transform: rotate(105deg);
+			transform: rotate(105deg) translateY(100%);
 			top: -40px;
 			left: -40px;
 		}
+
 		&.leaves_t_l_r {
 			width: 300px;
-			transform: rotate(164deg);
+			transform: rotate(164deg) translateY(100%);
+			transition-delay: 500ms;
 			top: -106px;
 			left: -68px;
 		}
 		&.leaves_t_l_b {
 			width: 290px;
-			transform: rotate(104deg);
+			transform: rotate(104deg) translateX(100%);
+			transition-delay: 300ms;
 			top: 105px;
 			left: -66px;
 		}
 		&.flower_t_r {
 			width: 280px;
-			transform: rotate(-70deg);
+			transform: rotate(-70deg) translateX(100%);
+			transition-delay: 4ㅍ00ms;
 			top: -39px;
 			right: -21px;
 		}
 		&.flower_b_l {
 			width: 240px;
-			transform: rotate(-70deg);
+			transform: rotate(-70deg) translateX(-100%);
+			transition-delay: 300ms;
 			bottom: -61px;
 			left: -21px;
 		}
 		&.leaves_b_r {
 			width: 260px;
-			transform: rotate(63deg);
+			transform: rotate(63deg) translateX(100%);
+			transition-delay: 500ms;
 			bottom: -9px;
 			right: -73px;
 		}
 		&.flower_b_r {
 			width: 270px;
-			transform: rotate(14deg);
+			transform: rotate(14deg) translateX(100%);
 			bottom: -61px;
 			right: -73px;
+		}
+	}
+}
+.bg_loading,
+.bg_finish_loading {
+	img {
+		&.flower_t_l {
+			transform: rotate(105deg) translateY(0);
+		}
+		&.leaves_t_l_r {
+			transform: rotate(164deg) translateY(0);
+		}
+		&.leaves_t_l_b {
+			transform: rotate(104deg) translateX(0);
+		}
+		&.flower_t_r {
+			transform: rotate(-70deg) translateX(0);
+		}
+		&.flower_b_l {
+			transform: rotate(-70deg) translateX(0);
+		}
+		&.leaves_b_r {
+			transform: rotate(63deg) translateX(0);
+		}
+		&.flower_b_r {
+			transform: rotate(14deg) translateX(0);
 		}
 	}
 }

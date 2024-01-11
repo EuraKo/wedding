@@ -1,20 +1,32 @@
 import './App.css';
 import Banner from './views/Banner';
 import Calendar from './views/Calendar';
+import Gallery from './views/Gallery';
 import MainBg from './views/MainBg';
+
 import { useEffect, useState } from 'react';
 
 function App() {
 	const [loading, setLoading] = useState(true);
+	const [open, setOpen] = useState('');
 	useEffect(() => {
-		setTimeout(() => {
-			setLoading(false);
-		}, 1000);
-	}, []);
+		if (loading) {
+			setOpen('loading_main');
+		} else {
+			setOpen('loading_main_finish');
+		}
+	}, [loading]);
+	useEffect(() => {
+		if (open === 'loading_main') {
+			setTimeout(() => {
+				setLoading(false);
+			}, 2000);
+		}
+	}, [open]);
 	return (
 		<div className='App'>
 			<MainBg loading={loading} />
-			<main className={loading && 'loading'}>
+			<main className={open}>
 				{loading ? (
 					<div className='intro'>
 						김교철 <div className='small'>그리고</div> 고유라
@@ -22,23 +34,36 @@ function App() {
 				) : (
 					<>
 						<Banner />
+						<section>
+							<div>김교철 & 고유라</div>
+							<div>2024.06.09 일 오전 11시 발산 더 베뉴지</div>
+						</section>
 						<Calendar />
+						<Gallery />
+						<section>
+							<h2>오시는 길</h2>
+							<div>
+								<div>
+									지하철 Subway
+									<ul>
+										<li>5호선 발산역 3번 출구 방향 1분 이내</li>
+										<li>9호선 양천향교역 6번 출구 도보 10분 직진 버스</li>
+									</ul>
+									Bus
+									<div>발산역 정류장 하차</div>
+									<ul>
+										<li>지선버스 6630, 6632, 6642, 6645, 6648, 6657, 6712</li>
+										<li>간선버스 601, 605, 652,654, 661</li>
+										<li>공항버스 6003</li>
+										<li>일반버스 60, 60-3, 88, 1002</li>
+										<li>직행버스 3000, 8000</li>
+									</ul>
+								</div>
+							</div>
+						</section>
 					</>
 				)}
 			</main>
-			{/* <header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'>
-					Learn React
-				</a>
-			</header> */}
 		</div>
 	);
 }

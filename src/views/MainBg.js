@@ -12,14 +12,43 @@ const MainBg = (props) => {
 		}
 	}, [props.loading]);
 	return (
-		<div className={`${styles.intro} ${loading}`}>
-			<img src={leaves} className={`${styles.leaves_t_l_r} front`} alt='' />
-			<img src={flower} className={`${styles.flower_t_l} front`} alt='' />
-			<img src={flower} className={`${styles.flower_b_l} front`} alt='' />
-			<img src={leaves} className={`${styles.leaves_b_r} front`} alt='' />
-			<img src={flower} className={`${styles.flower_b_r} front`} alt='' />
-			<img src={leaves} className={`${styles.leaves_t_l_b} back`} alt='' />
-			<img src={flower} className={`${styles.flower_t_r} back`} alt='z' />
+		<div className={`${styles.intro}  ${styles[loading]}`}>
+			<img
+				src={leaves}
+				className={`${styles.leaves_t_l_r} ${styles.front}`}
+				alt=''
+			/>
+			<img
+				src={flower}
+				className={`${styles.flower_t_l} ${styles.front}`}
+				// style={{ transform: `rotate(105deg) translateY(100%)` }}
+				alt=''
+			/>
+			<img
+				src={flower}
+				className={`${styles.flower_b_l} ${styles.front}`}
+				alt=''
+			/>
+			<img
+				src={leaves}
+				className={`${styles.leaves_b_r} ${styles.front}`}
+				alt=''
+			/>
+			<img
+				src={flower}
+				className={`${styles.flower_b_r} ${styles.front}`}
+				alt=''
+			/>
+			<img
+				src={leaves}
+				className={`${styles.leaves_t_l_b} ${styles.back}`}
+				alt=''
+			/>
+			<img
+				src={flower}
+				className={`${styles.flower_t_r} ${styles.back}`}
+				alt='z'
+			/>
 		</div>
 	);
 };

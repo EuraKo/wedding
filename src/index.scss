@@ -20,11 +20,10 @@
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+	font-family: 'Cafe24Oneprettynight', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
 }
 
 .App {
@@ -33,7 +32,7 @@ body {
 	height: 100vh;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;
+	overflow-y: clip;
 }
 main {
 	width: 350px;
@@ -50,6 +49,15 @@ main {
 	scrollbar-width: none; /* Firefox */
 	padding: 20px;
 	box-sizing: border-box;
+	transform: all 1s;
+	&.loading_main_finish {
+		height: 100vh;
+		top: 0;
+		bottom: 0;
+		border-left: 1px solid #482903;
+		border-right: 1px solid #482903;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
 }
 .box {
 }
@@ -66,8 +74,14 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	font-size: 48px;
+	line-height: 150%;
 	color: #383d2c;
 	font-family: 'Cafe24Oneprettynight', serif;
+	opacity: 0;
+	transition: opacity 3s;
+}
+.loading_main .intro {
+	opacity: 1;
 }
 .small {
 	font-size: 18px;
@@ -75,12 +89,10 @@ section {
 h1 {
 	font-family: 'SnellBT-Regular';
 }
-.bg_loading {
-	.front {
-		z-index: 100;
-	}
+ul {
+	margin: 0;
+	padding: 0;
 }
-
-.bg_finish_loading {
-	opacity: 50%;
+li {
+	list-style: none;
 }
