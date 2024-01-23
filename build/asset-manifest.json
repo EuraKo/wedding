@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/wedding/static/css/main.80358ff7.css",
+    "main.js": "/wedding/static/js/main.12f9402e.js",
+    "static/js/787.cf61719d.chunk.js": "/wedding/static/js/787.cf61719d.chunk.js",
+    "static/media/Cafe24Oneprettynight-v2.0.ttf": "/wedding/static/media/Cafe24Oneprettynight-v2.0.a23d20e7fbd4eac27421.ttf",
+    "static/media/leaves.png": "/wedding/static/media/leaves.7ae34a4098f7f3d085f6.png",
+    "static/media/flowers.png": "/wedding/static/media/flowers.a5fa567e725ad366201f.png",
+    "static/media/slider_big_4.jpeg": "/wedding/static/media/slider_big_4.a7e4ef761d280d29f075.jpeg",
+    "static/media/slider_big_7.jpeg": "/wedding/static/media/slider_big_7.2441035b05ec240e6c5b.jpeg",
+    "static/media/slider_big_9.jpeg": "/wedding/static/media/slider_big_9.b85640d856cf1f96014a.jpeg",
+    "static/media/slider_big_3.jpeg": "/wedding/static/media/slider_big_3.3b94d2c1b26f9e65733e.jpeg",
+    "static/media/slider_big_8.jpeg": "/wedding/static/media/slider_big_8.514293c01abf106866f4.jpeg",
+    "static/media/slider_big_5.jpeg": "/wedding/static/media/slider_big_5.2926188da5d33bd63d80.jpeg",
+    "static/media/main.png": "/wedding/static/media/main.448e95b980024f329678.png",
+    "static/media/slider_big_6.jpeg": "/wedding/static/media/slider_big_6.235fea64964374ff9368.jpeg",
+    "static/media/slider_big_1.jpeg": "/wedding/static/media/slider_big_1.55d4c55b01536a981d0a.jpeg",
+    "static/media/slider_big_2.jpeg": "/wedding/static/media/slider_big_2.2fa0befcc24f45ef3bfc.jpeg",
+    "static/media/ZapfinoExtraLT-One.otf": "/wedding/static/media/ZapfinoExtraLT-One.15960e09cc1806a9132b.otf",
+    "static/media/SnellBT-Regular.otf": "/wedding/static/media/SnellBT-Regular.2eba2bb6fda462542618.otf",
+    "static/media/slick.svg": "/wedding/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/wedding/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/wedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/wedding/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/wedding/index.html",
+    "main.80358ff7.css.map": "/wedding/static/css/main.80358ff7.css.map",
+    "main.12f9402e.js.map": "/wedding/static/js/main.12f9402e.js.map",
+    "787.cf61719d.chunk.js.map": "/wedding/static/js/787.cf61719d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80358ff7.css",
+    "static/js/main.12f9402e.js"
+  ]
+}
