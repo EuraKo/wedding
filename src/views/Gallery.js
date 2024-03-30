@@ -39,7 +39,7 @@ const Gallery = (props) => {
 
 	return (
 		<>
-			<section>
+			<section style={{ marginBottom: 60 }}>
 				<h2>GALLERY</h2>
 				<div className={styles.gallery_box}>
 					<Slider {...settings}>

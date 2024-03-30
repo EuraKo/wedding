@@ -24,7 +24,7 @@ const MapNaverDefault = () => {
 
 	return (
 		<>
-			<div ref={mapElement} style={{ minHeight: '200px' }} />
+			<div ref={mapElement} style={{ minHeight: '250px' }} />
 		</>
 	);
 };
