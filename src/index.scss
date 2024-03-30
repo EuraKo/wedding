@@ -11,12 +11,12 @@
 	src: local('Zapfino'), url('./fonts/ZapfinoExtraLT-One.otf') format('otf');
 }
 
-@font-face {
-	font-family: 'SnellBT-Regular';
-	font-style: normal;
-	src: local('SnellBT-Regular'),
-		url('./fonts/snell/SnellBT-Regular.otf') format('otf');
-}
+// @font-face {
+// 	font-family: 'Snell';
+// 	font-style: normal;
+// 	src: local('Snell'),
+// 		url('./fonts/snell/SnellBT-Regular.woff2') format('woff2');
+// }
 
 body {
 	margin: 0;
@@ -32,7 +32,7 @@ body {
 	height: 100vh;
 	margin: 0 auto;
 	position: relative;
-	overflow-y: clip;
+	overflow: clip;
 }
 main {
 	width: 350px;

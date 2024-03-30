@@ -15,15 +15,19 @@ const Calendar = () => {
 				<span>8</span>
 			</div>
 			<div className={styles.calendar_area}>
-				{[0, 0, 0, 0, 0, 0].map((blank) => {
-					return <div class={styles.day}></div>;
+				{[0, 0, 0, 0, 0, 0].map((blank, idx) => {
+					return <div className={styles.day} key={idx}></div>;
 				})}
 
 				{days.map((day) => {
 					if (day === 9) {
-						return <div class={`${styles.day} ${styles.dDay}`}>{day}</div>;
+						return (
+							<div className={`${styles.day} ${styles.dDay}`} key={day}>
+								{day}
+							</div>
+						);
 					}
-					return <div class={styles.day}>{day}</div>;
+					return <div className={styles.day}>{day}</div>;
 				})}
 			</div>
 		</section>
