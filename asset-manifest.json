@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding/static/css/main.d7e39da0.css",
-    "main.js": "/wedding/static/js/main.38ca2c0e.js",
+    "main.js": "/wedding/static/js/main.00a1e78d.js",
     "static/js/787.cf61719d.chunk.js": "/wedding/static/js/787.cf61719d.chunk.js",
     "static/media/Cafe24Oneprettynight-v2.0.ttf": "/wedding/static/media/Cafe24Oneprettynight-v2.0.a23d20e7fbd4eac27421.ttf",
     "static/media/leaves.png": "/wedding/static/media/leaves.7ae34a4098f7f3d085f6.png",
@@ -14,7 +14,6 @@
     "static/media/slider_big_1.jpg": "/wedding/static/media/slider_big_1.e82e9020a659f67c8a9a.jpg",
     "static/media/slider_big_22.jpg": "/wedding/static/media/slider_big_22.36d1fe4de2905829cfa5.jpg",
     "static/media/slider_big_2.jpg": "/wedding/static/media/slider_big_2.4f0ef6f000b70b4bb574.jpg",
-    "static/media/thumnail2.jpg": "/wedding/static/media/thumnail2.9f9c767b39d18873c4b4.jpg",
     "static/media/slider_big_10.jpg": "/wedding/static/media/slider_big_10.7d46834f177b23feb297.jpg",
     "static/media/slider_big_13.jpg": "/wedding/static/media/slider_big_13.20816a5656c54f51c38d.jpg",
     "static/media/slider_big_16.jpg": "/wedding/static/media/slider_big_16.0e7e49f20341791eb77b.jpg",
@@ -37,6 +36,7 @@
     "static/media/face_kyo.png": "/wedding/static/media/face_kyo.c792d33fd027e002fdea.png",
     "static/media/ZapfinoExtraLT-One.otf": "/wedding/static/media/ZapfinoExtraLT-One.15960e09cc1806a9132b.otf",
     "static/media/kakao.png": "/wedding/static/media/kakao.45d78be5d583bdf09e4b.png",
+    "static/media/thumnail2.jpg": "/wedding/static/media/thumnail2.7dafc2aa06bbb345f929.jpg",
     "static/media/face_main1.png": "/wedding/static/media/face_main1.ba01ee56eb42e0bf835b.png",
     "static/media/face_main2.png": "/wedding/static/media/face_main2.7ddfd700ecd287c3125d.png",
     "static/media/slick.svg": "/wedding/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -45,11 +45,11 @@
     "static/media/slick.woff": "/wedding/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wedding/index.html",
     "main.d7e39da0.css.map": "/wedding/static/css/main.d7e39da0.css.map",
-    "main.38ca2c0e.js.map": "/wedding/static/js/main.38ca2c0e.js.map",
+    "main.00a1e78d.js.map": "/wedding/static/js/main.00a1e78d.js.map",
     "787.cf61719d.chunk.js.map": "/wedding/static/js/787.cf61719d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7e39da0.css",
-    "static/js/main.38ca2c0e.js"
+    "static/js/main.00a1e78d.js"
   ]
 }
