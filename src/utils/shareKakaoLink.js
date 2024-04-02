@@ -13,8 +13,8 @@ export const shareKakao = (route, title) => {
 		Kakao.Share.sendDefault({
 			objectType: 'feed', // 카카오 링크 공유 여러 type들 중 feed라는 타입 -> 자세한 건 카카오에서 확인
 			content: {
-				title: '김교철 고유라 결혼합니다.', // 인자값으로 받은 title
-				description: '우리결혼해요', // 인자값으로 받은 title
+				title: '김교철 ❤️ 고유라', // 인자값으로 받은 title
+				description: '2024.06.09 초대합니다.', // 인자값으로 받은 title
 				imageUrl:
 					'https://raw.githubusercontent.com/EuraKo/wedding/main/src/imgs/thumnail.jpg',
 				link: {
@@ -24,7 +24,7 @@ export const shareKakao = (route, title) => {
 			},
 			buttons: [
 				{
-					title: 'title',
+					title: '김교철 ❤️ 고유라',
 					link: {
 						mobileWebUrl: route,
 						webUrl: route,
