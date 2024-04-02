@@ -1,16 +1,18 @@
 import face_gyo from '../imgs/face_kyo.png';
 import face_eu from '../imgs/face_eu.png';
-import styles from './Money.module.scss';
+import styles from './Phone.module.scss';
 import { useState } from 'react';
-const MoneyModal = (props) => {
+const phoneModal = (props) => {
 	const list = {
 		gyo: [
-			{ name: '김영호', number: '111-111-1111', bank: '우리' },
-			{ name: '김교철', number: '100038382427', bank: '토스' },
+			{ name: '김영호', number: '01053703222' },
+			{ name: '황영화', number: '01063753222' },
+			{ name: '김교철', number: '01035752334' },
 		],
 		eu: [
-			{ name: '고태원', number: '111-111-1111', bank: '우리' },
-			{ name: '고유라', number: '91094500071', bank: '국민' },
+			{ name: '고태원', number: '01068002627' },
+			{ name: '김춘순', number: '01053032627' },
+			{ name: '고유라', number: '01082228443' },
 		],
 	};
 
@@ -26,16 +28,12 @@ const MoneyModal = (props) => {
 					닫기
 				</button>
 				<div className={styles.money_cont}>
-					<h2>{props.type === 'gyo' ? '신랑' : '신부'} 측 마음 전하기</h2>
+					<h2>{props.type === 'gyo' ? '신랑' : '신부'}</h2>
 					{list[props.type].map((list, idx) => {
 						return (
 							<div key={idx} className={styles.money_list}>
-								<div>
-									예금주 : <b>{list.name}</b>
-								</div>
-								<div>
-									계좌번호 : <b>{list.number} </b>({list.bank})
-								</div>
+								<span>{list.name}</span>
+								<a href={`tel:${list.number}`}>{list.number}</a>
 							</div>
 						);
 					})}
@@ -44,4 +42,4 @@ const MoneyModal = (props) => {
 		</>
 	);
 };
-export default MoneyModal;
+export default phoneModal;

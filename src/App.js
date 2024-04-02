@@ -4,12 +4,13 @@ import Calendar from './views/Calendar';
 import Gallery from './views/Gallery';
 import MainBg from './views/MainBg';
 import GalleryModal from './views/GalleryModal';
-import MoneyModal from './views/MoneyModal';
+import PhoneModal from './views/PhoneModal';
 import Ment from './views/Ment';
 import Money from './views/Money';
 import Maps from './views/Maps';
 import Way from './views/Way';
 import Phone from './views/Phone';
+import Footer from './views/Footer';
 
 import { useEffect, useState } from 'react';
 
@@ -19,7 +20,7 @@ function App() {
 	const [selectImg, setSelectImg] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
 
-	const [moneyOpen, setMoneyOpen] = useState(false);
+	const [phoneOpen, setPhoneOpen] = useState(false);
 	const [type, setType] = useState('');
 
 	useEffect(() => {
@@ -58,16 +59,18 @@ function App() {
 							setModalOpen={setModalOpen}
 							modalOpen={modalOpen}
 						/>
-						<Maps />
-						<Way />
-						<Money
+						<Way>
+							<Maps />
+						</Way>
+						<Money />
+						<Phone
 							setType={setType}
-							setModalOpen={setMoneyOpen}
-							modalOpen={moneyOpen}
+							setModalOpen={setPhoneOpen}
+							modalOpen={phoneOpen}
 						/>
-						<Phone />
 					</>
 				)}
+				<Footer />
 			</main>
 			{modalOpen && (
 				<GalleryModal
@@ -77,11 +80,11 @@ function App() {
 				/>
 			)}
 
-			{moneyOpen && (
-				<MoneyModal
+			{phoneOpen && (
+				<PhoneModal
 					type={type}
-					setModalOpen={setMoneyOpen}
-					modalOpen={moneyOpen}
+					setModalOpen={setPhoneOpen}
+					modalOpen={phoneOpen}
 				/>
 			)}
 		</div>

@@ -1,0 +1,28 @@
+footer {
+	background-color: #f0e5df;
+	padding: 20px;
+}
+.link_box {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	margin-bottom: 10px;
+	button {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		background: #90a083;
+		border: 0;
+		border-radius: 5px;
+		margin-right: 5px;
+		font-size: 14px;
+		color: #fff;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+.logo {
+	width: 100%;
+}

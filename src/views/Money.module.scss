@@ -1,36 +1,21 @@
 .money_box {
-	display: flex;
 }
 .money_btn {
-	width: calc(50% - 5px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 	background-color: #fff;
-	border: 1px solid #add;
-	border-radius: 20px;
-	padding: 5px 0px 0px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding: 10px;
 	font-family: 'Cafe24Oneprettynight', sans-serif;
 	overflow: hidden;
 	cursor: pointer;
-	&:first-of-type {
-		margin-right: 10px;
-	}
-	@keyframes face {
-		0% {
-			rotate: 0;
-		}
-		25% {
-			rotate: 10deg;
-		}
-		75% {
-			rotate: -10deg;
-		}
-		100% {
-			rotate: 0;
-		}
-	}
+
 	&:hover {
 		img {
 			transform-origin: bottom;
-			// animation: face 1s ease-in infinite;
 		}
 	}
 	img {
@@ -38,38 +23,35 @@
 		margin-top: 5px;
 	}
 }
-.money_modal {
-	width: 330px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: rgba(240, 226, 223, 1);
-	border: 2px solid #90a083;
-	h2 {
-		margin: 13px 0 40px;
-		font-size: 20px;
+.money_list {
+	margin-bottom: 10px;
+	&:last-of-type {
+		margin-bottom: 0;
 	}
-	.money_cont {
-		padding-bottom: 30px;
+}
+.list_box {
+	background-color: #f0e5df;
+	padding: 5px 10px;
+	border-radius: 5px;
+	display: none;
+	&.list_open {
+		display: block;
 	}
-	.money_list {
-		margin-bottom: 20px;
+	.money_item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5px;
+		text-align: left;
+		border-bottom: 1px solid #aaa;
+		padding: 5px 0;
 		&:last-of-type {
 			margin-bottom: 0;
+			border-bottom: 0;
 		}
 	}
 }
-.modal_cancle {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	right: 5px;
-	top: 5px;
-	background-color: #90a083;
-	box-shadow: none;
-	border: 0;
-	color: #fff;
-	z-index: 100;
-	cursor: pointer;
+.success {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
 }

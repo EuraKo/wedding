@@ -47,7 +47,6 @@ main {
 	overflow-y: auto;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
-	padding: 20px;
 	box-sizing: border-box;
 	transform: all 1s;
 	&.loading_main_finish {
@@ -66,6 +65,7 @@ main::-webkit-scrollbar {
 }
 section {
 	margin-bottom: 30px;
+	padding: 0 20px;
 }
 .intro {
 	height: 100%;

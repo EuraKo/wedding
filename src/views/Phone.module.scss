@@ -1,0 +1,82 @@
+.money_box {
+	display: flex;
+}
+.money_btn {
+	width: calc(50% - 5px);
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 20px;
+	padding: 5px 0px 0px;
+	font-family: 'Cafe24Oneprettynight', sans-serif;
+	overflow: hidden;
+	cursor: pointer;
+	&:first-of-type {
+		margin-right: 10px;
+	}
+	@keyframes face {
+		0% {
+			rotate: 0;
+		}
+		25% {
+			rotate: 10deg;
+		}
+		75% {
+			rotate: -10deg;
+		}
+		100% {
+			rotate: 0;
+		}
+	}
+	&:hover {
+		img {
+			transform-origin: bottom;
+			animation: face 1s ease-in infinite;
+		}
+	}
+	img {
+		width: 50%;
+		margin-top: 5px;
+	}
+}
+.money_modal {
+	width: 330px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(240, 226, 223, 1);
+	border: 2px solid #90a083;
+	h2 {
+		margin: 13px 0 40px;
+		font-size: 20px;
+	}
+	.money_cont {
+		padding-bottom: 30px;
+	}
+	.money_list {
+		margin-bottom: 10px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			margin-left: 5px;
+			color: #383d2c;
+			font-size: 20px;
+		}
+	}
+}
+.modal_cancle {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background-color: #90a083;
+	box-shadow: none;
+	border: 0;
+	color: #fff;
+	z-index: 100;
+	cursor: pointer;
+}

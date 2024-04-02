@@ -1,8 +1,9 @@
 import style from './Way.module.scss';
-const Way = () => {
+const Way = (props) => {
 	return (
 		<section>
 			<h2>오시는 길</h2>
+			{props.children}
 			<div>
 				<div className={style.way_box}>
 					<h3>주소</h3>
