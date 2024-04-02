@@ -16,7 +16,8 @@ export const shareKakao = (route, title) => {
 			content: {
 				title: '김교철 고유라 결혼합니다.', // 인자값으로 받은 title
 				description: '우리결혼해요', // 인자값으로 받은 title
-				imageUrl: '../imgs/thumnail2.jpg',
+				imageUrl:
+					'https://raw.githubusercontent.com/EuraKo/wedding/main/src/imgs/thumnail2.jpg',
 				link: {
 					mobileWebUrl: route, // 인자값으로 받은 route(uri 형태)
 					webUrl: route,
