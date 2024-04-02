@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Cafe24 OnePrettyNight';
+    src: url('Cafe24Oneprettynight.woff2') format('woff2'),
+        url('Cafe24Oneprettynight.woff') format('woff'),
+        url('Cafe24Oneprettynight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

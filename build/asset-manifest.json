@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.d7e39da0.css",
-    "main.js": "/wedding/static/js/main.38ca2c0e.js",
+    "main.css": "/wedding/static/css/main.2a19de76.css",
+    "main.js": "/wedding/static/js/main.b48dceb5.js",
     "static/js/787.cf61719d.chunk.js": "/wedding/static/js/787.cf61719d.chunk.js",
-    "static/media/Cafe24Oneprettynight-v2.0.ttf": "/wedding/static/media/Cafe24Oneprettynight-v2.0.a23d20e7fbd4eac27421.ttf",
+    "static/media/Cafe24Oneprettynight.ttf": "/wedding/static/media/Cafe24Oneprettynight.3d5f1d38f21eb0c74dec.ttf",
+    "static/media/Cafe24Oneprettynight.woff": "/wedding/static/media/Cafe24Oneprettynight.7296e277d10e350448d3.woff",
     "static/media/leaves.png": "/wedding/static/media/leaves.7ae34a4098f7f3d085f6.png",
     "static/media/flowers.png": "/wedding/static/media/flowers.a5fa567e725ad366201f.png",
+    "static/media/Cafe24Oneprettynight.woff2": "/wedding/static/media/Cafe24Oneprettynight.753091724d2c17ece2c6.woff2",
     "static/media/slider_big_4.jpg": "/wedding/static/media/slider_big_4.74b87810dc15c8e8a138.jpg",
     "static/media/slider_big_6.jpg": "/wedding/static/media/slider_big_6.d6418c0e2ffaf97b0372.jpg",
     "static/media/slider_big_5.jpg": "/wedding/static/media/slider_big_5.b346e6e275cd1890179d.jpg",
@@ -14,7 +16,6 @@
     "static/media/slider_big_1.jpg": "/wedding/static/media/slider_big_1.e82e9020a659f67c8a9a.jpg",
     "static/media/slider_big_22.jpg": "/wedding/static/media/slider_big_22.36d1fe4de2905829cfa5.jpg",
     "static/media/slider_big_2.jpg": "/wedding/static/media/slider_big_2.4f0ef6f000b70b4bb574.jpg",
-    "static/media/thumnail2.jpg": "/wedding/static/media/thumnail2.9f9c767b39d18873c4b4.jpg",
     "static/media/slider_big_10.jpg": "/wedding/static/media/slider_big_10.7d46834f177b23feb297.jpg",
     "static/media/slider_big_13.jpg": "/wedding/static/media/slider_big_13.20816a5656c54f51c38d.jpg",
     "static/media/slider_big_16.jpg": "/wedding/static/media/slider_big_16.0e7e49f20341791eb77b.jpg",
@@ -37,6 +38,18 @@
     "static/media/face_kyo.png": "/wedding/static/media/face_kyo.c792d33fd027e002fdea.png",
     "static/media/ZapfinoExtraLT-One.otf": "/wedding/static/media/ZapfinoExtraLT-One.15960e09cc1806a9132b.otf",
     "static/media/kakao.png": "/wedding/static/media/kakao.45d78be5d583bdf09e4b.png",
+    "static/media/SnellRoundhand-BlackScript.ttf": "/wedding/static/media/SnellRoundhand-BlackScript.24a529748849a5168154.ttf",
+    "static/media/SnellRoundhand-BoldScript.ttf": "/wedding/static/media/SnellRoundhand-BoldScript.46fd38821486636c124f.ttf",
+    "static/media/SnellBT-Regular.ttf": "/wedding/static/media/SnellBT-Regular.ceb5980f327c4be1eda2.ttf",
+    "static/media/SnellBT-Bold.ttf": "/wedding/static/media/SnellBT-Bold.a2649f01cc82bde3a7ae.ttf",
+    "static/media/SnellRoundhand-BlackScript.woff": "/wedding/static/media/SnellRoundhand-BlackScript.9ba30269966a4f44ccd1.woff",
+    "static/media/SnellRoundhand-BoldScript.woff": "/wedding/static/media/SnellRoundhand-BoldScript.1bc023875acba1609d63.woff",
+    "static/media/SnellBT-Bold.woff": "/wedding/static/media/SnellBT-Bold.c5e8eed1e5214284f253.woff",
+    "static/media/SnellBT-Regular.woff": "/wedding/static/media/SnellBT-Regular.6045d90fc6dbac6fa7a0.woff",
+    "static/media/SnellRoundhand-BlackScript.woff2": "/wedding/static/media/SnellRoundhand-BlackScript.4bbf0d99127f19822a52.woff2",
+    "static/media/SnellRoundhand-BoldScript.woff2": "/wedding/static/media/SnellRoundhand-BoldScript.7e20c5478b64b070c482.woff2",
+    "static/media/SnellBT-Bold.woff2": "/wedding/static/media/SnellBT-Bold.cf9b19cbf3491dd13369.woff2",
+    "static/media/SnellBT-Regular.woff2": "/wedding/static/media/SnellBT-Regular.033462025713b65e2bfa.woff2",
     "static/media/face_main1.png": "/wedding/static/media/face_main1.ba01ee56eb42e0bf835b.png",
     "static/media/face_main2.png": "/wedding/static/media/face_main2.7ddfd700ecd287c3125d.png",
     "static/media/slick.svg": "/wedding/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -44,12 +57,12 @@
     "static/media/slick.ttf": "/wedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/wedding/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wedding/index.html",
-    "main.d7e39da0.css.map": "/wedding/static/css/main.d7e39da0.css.map",
-    "main.38ca2c0e.js.map": "/wedding/static/js/main.38ca2c0e.js.map",
+    "main.2a19de76.css.map": "/wedding/static/css/main.2a19de76.css.map",
+    "main.b48dceb5.js.map": "/wedding/static/js/main.b48dceb5.js.map",
     "787.cf61719d.chunk.js.map": "/wedding/static/js/787.cf61719d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7e39da0.css",
-    "static/js/main.38ca2c0e.js"
+    "static/css/main.2a19de76.css",
+    "static/js/main.b48dceb5.js"
   ]
 }

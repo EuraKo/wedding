@@ -1,9 +1,5 @@
-@font-face {
-	font-family: 'Cafe24Oneprettynight';
-	font-style: normal;
-	src: local('Cafe24Oneprettynight'),
-		url('./fonts/Cafe24Oneprettynight-v2.0.ttf') format('ttf');
-}
+@import url('./fonts/snell/stylesheet.css');
+@import url('./fonts/cafe24Oneprettynight/stylesheet.css');
 
 @font-face {
 	font-family: 'Zapfino';
@@ -20,7 +16,7 @@
 
 body {
 	margin: 0;
-	font-family: 'Cafe24Oneprettynight', sans-serif;
+	font-family: 'Cafe24 OnePrettyNight', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
@@ -76,7 +72,7 @@ section {
 	font-size: 48px;
 	line-height: 150%;
 	color: #383d2c;
-	font-family: 'Cafe24Oneprettynight', serif;
+	font-family: 'Cafe24 OnePrettyNight', serif;
 	opacity: 0;
 	transition: opacity 3s;
 }
