@@ -6,9 +6,13 @@ const MainBg = (props) => {
 	const [loading, setLoading] = useState('');
 	useEffect(() => {
 		if (props.loading) {
-			setLoading('bg_loading');
+			setTimeout(() => {
+				setLoading('bg_loading');
+			}, 1000);
 		} else {
-			setLoading('bg_finish_loading');
+			setTimeout(() => {
+				setLoading('bg_finish_loading');
+			});
 		}
 	}, [props.loading]);
 	return (
@@ -18,6 +22,7 @@ const MainBg = (props) => {
 				className={`${styles.leaves_t_l_r} ${styles.front}`}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 			<img
 				src={flower}
@@ -25,36 +30,42 @@ const MainBg = (props) => {
 				// style={{ transform: `rotate(105deg) translateY(100%)` }}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 			<img
 				src={flower}
 				className={`${styles.flower_b_l} ${styles.front}`}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 			<img
 				src={leaves}
 				className={`${styles.leaves_b_r} ${styles.front}`}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 			<img
 				src={flower}
 				className={`${styles.flower_b_r} ${styles.front}`}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 			<img
 				src={leaves}
 				className={`${styles.leaves_t_l_b} ${styles.back}`}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 			<img
 				src={flower}
 				className={`${styles.flower_t_r} ${styles.back}`}
 				alt=''
 				decoding='async'
+				loading='lazy'
 			/>
 		</div>
 	);
