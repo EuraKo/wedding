@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/wedding/static/css/main.94b92e56.css",
-    "main.js": "/wedding/static/js/main.0d65e980.js",
+    "main.css": "/wedding/static/css/main.d5280b75.css",
+    "main.js": "/wedding/static/js/main.8ceef0af.js",
     "static/css/383.cdf7bda8.chunk.css": "/wedding/static/css/383.cdf7bda8.chunk.css",
     "static/js/383.6b0e936b.chunk.js": "/wedding/static/js/383.6b0e936b.chunk.js",
-    "static/css/471.08618b18.chunk.css": "/wedding/static/css/471.08618b18.chunk.css",
-    "static/js/471.226426d8.chunk.js": "/wedding/static/js/471.226426d8.chunk.js",
+    "static/css/471.a9fb134d.chunk.css": "/wedding/static/css/471.a9fb134d.chunk.css",
+    "static/js/471.0ca8a353.chunk.js": "/wedding/static/js/471.0ca8a353.chunk.js",
     "static/js/787.cf61719d.chunk.js": "/wedding/static/js/787.cf61719d.chunk.js",
     "static/media/Cafe24Oneprettynight.ttf": "/wedding/static/media/Cafe24Oneprettynight.3d5f1d38f21eb0c74dec.ttf",
     "static/media/Cafe24Oneprettynight.woff": "/wedding/static/media/Cafe24Oneprettynight.7296e277d10e350448d3.woff",
@@ -61,16 +61,16 @@
     "static/media/slick.ttf": "/wedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/wedding/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/wedding/index.html",
-    "main.94b92e56.css.map": "/wedding/static/css/main.94b92e56.css.map",
-    "main.0d65e980.js.map": "/wedding/static/js/main.0d65e980.js.map",
+    "main.d5280b75.css.map": "/wedding/static/css/main.d5280b75.css.map",
+    "main.8ceef0af.js.map": "/wedding/static/js/main.8ceef0af.js.map",
     "383.cdf7bda8.chunk.css.map": "/wedding/static/css/383.cdf7bda8.chunk.css.map",
     "383.6b0e936b.chunk.js.map": "/wedding/static/js/383.6b0e936b.chunk.js.map",
-    "471.08618b18.chunk.css.map": "/wedding/static/css/471.08618b18.chunk.css.map",
-    "471.226426d8.chunk.js.map": "/wedding/static/js/471.226426d8.chunk.js.map",
+    "471.a9fb134d.chunk.css.map": "/wedding/static/css/471.a9fb134d.chunk.css.map",
+    "471.0ca8a353.chunk.js.map": "/wedding/static/js/471.0ca8a353.chunk.js.map",
     "787.cf61719d.chunk.js.map": "/wedding/static/js/787.cf61719d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94b92e56.css",
-    "static/js/main.0d65e980.js"
+    "static/css/main.d5280b75.css",
+    "static/js/main.8ceef0af.js"
   ]
 }

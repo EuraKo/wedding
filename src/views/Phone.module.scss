@@ -15,22 +15,67 @@
 	}
 	@keyframes face {
 		0% {
-			rotate: 0;
+			transform: rotate(0deg);
 		}
 		25% {
-			rotate: 10deg;
+			transform: rotate(10deg);
 		}
 		75% {
-			rotate: -10deg;
+			transform: rotate(-10deg);
 		}
 		100% {
-			rotate: 0;
+			transform: rotate(0deg);
+		}
+	}
+	@-moz-keyframes face {
+		0% {
+			-moz-transform: rotate(0deg);
+		}
+		25% {
+			-moz-transform: rotate(10deg);
+		}
+		75% {
+			-moz-transform: rotate(-10deg);
+		}
+		100% {
+			-moz-transform: rotate(0deg);
+		}
+	}
+	@-webkit-keyframes face {
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		25% {
+			-webkit-transform: rotate(10deg);
+		}
+		75% {
+			-webkit-transform: rotate(-10deg);
+		}
+		100% {
+			-webkit-transform: rotate(0deg);
+		}
+	}
+	@-o-keyframes face {
+		0% {
+			-o-transform: rotate(0deg);
+		}
+		25% {
+			-o-transform: rotate(10deg);
+		}
+		75% {
+			-o-transform: rotate(-10deg);
+		}
+		100% {
+			-o-transform: rotate(0deg);
 		}
 	}
 	&:hover {
 		img {
 			transform-origin: bottom;
-			animation: face 1s ease-in infinite;
+			animation: face 1s ease-in-out infinite;
+			-moz-animation: face 1s ease-in-out infinite;
+			-webkit-animation: face 1s ease-in-out infinite;
+			-o-animation: face 1s ease-in-out infinite;
 		}
 	}
 	img {
