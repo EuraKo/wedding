@@ -30,6 +30,7 @@ body {
 	position: relative;
 	overflow: clip;
 }
+
 main {
 	width: 350px;
 	height: calc(100vh - 80px);
@@ -44,7 +45,38 @@ main {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 	box-sizing: border-box;
-	transform: all 1s;
+	transition: all 1s;
+
+	.intro {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 48px;
+		line-height: 150%;
+		color: #383d2c;
+		font-family: 'Cafe24 OnePrettyNight', serif;
+		// opacity: 0;
+		transition: opacity 1s;
+	}
+
+	.contents {
+		opacity: 0;
+		transition: all 1s;
+		transform: scale(0);
+	}
+	&.loading_main {
+		.intro {
+			opacity: 1;
+		}
+		.contents {
+		}
+	}
 	&.loading_main_finish {
 		height: 100vh;
 		top: 0;
@@ -52,6 +84,13 @@ main {
 		border-left: 1px solid #482903;
 		border-right: 1px solid #482903;
 		background-color: rgba(255, 255, 255, 0.8);
+		.intro {
+			opacity: 0;
+		}
+		.contents {
+			opacity: 1;
+			transform: scale(1);
+		}
 	}
 }
 .box {
@@ -63,22 +102,7 @@ section {
 	margin-bottom: 30px;
 	padding: 0 20px;
 }
-.intro {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	font-size: 48px;
-	line-height: 150%;
-	color: #383d2c;
-	font-family: 'Cafe24 OnePrettyNight', serif;
-	opacity: 0;
-	transition: opacity 3s;
-}
-.loading_main .intro {
-	opacity: 1;
-}
+
 .small {
 	font-size: 18px;
 }

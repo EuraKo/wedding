@@ -43,7 +43,6 @@ const Gallery = (props) => {
 		slider_big_10,
 		slider_big_11,
 		slider_big_12,
-		slider_big_13,
 		slider_big_14,
 		slider_big_15,
 		slider_big_16,
