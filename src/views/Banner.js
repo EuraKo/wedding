@@ -6,7 +6,7 @@ import style from './Banner.module.scss';
 const Banner = () => {
 	return (
 		<section className={style.top}>
-			<h1>We Invite You To Our Wedding.</h1>
+			<h1>We Invite You To Our Wedding</h1>
 			<div className={style.banner_box}>
 				<img src={main} alt='' className={style.bg_img} />
 				<img src={eu} alt='' className={`${style.girl} ${style.face}`} />

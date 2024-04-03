@@ -17,6 +17,7 @@
 body {
 	margin: 0;
 	font-family: 'Cafe24 OnePrettyNight', sans-serif;
+	font-style: italic;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
@@ -115,4 +116,8 @@ ul {
 }
 li {
 	list-style: none;
+}
+button,
+a {
+	color: inherit;
 }
