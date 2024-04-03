@@ -28,7 +28,9 @@ function App() {
 		if (loading) {
 			setOpen('loading_main');
 		} else {
-			setOpen('loading_main_finish');
+			setTimeout(() => {
+				setOpen('loading_main_finish');
+			}, 100);
 		}
 	}, [loading]);
 	useEffect(() => {
