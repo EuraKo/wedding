@@ -35,10 +35,10 @@
 		}
 		&.leaves_t_l_b {
 			width: 290px;
-			transform: rotate(104deg) translateX(100%);
+			transform: rotate(104deg) translateX(100%) translateY(100%);
 			transition-delay: 300ms;
 			top: 105px;
-			left: -66px;
+			left: -62px;
 		}
 		&.flower_t_r {
 			width: 280px;

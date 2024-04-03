@@ -52,7 +52,8 @@ function App() {
 						<LazyBanner />
 						<section>
 							<div>김교철 & 고유라</div>
-							<div>2024.06.09 (일) 오전 11시 발산 더 베뉴지</div>
+							<div>2024.06.09 (일) 오전 11시</div>
+							<div> 발산 더 베뉴지 2층 베뉴지홀</div>
 						</section>
 						<Ment />
 						<Calendar />
