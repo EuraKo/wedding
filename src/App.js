@@ -9,6 +9,7 @@ import Maps from './views/Maps';
 import Way from './views/Way';
 import Reception from './views/Reception';
 import Phone from './views/Phone';
+import Guestbook from './views/Guestbook';
 import Footer from './views/Footer';
 
 import React, { useEffect, useState, Suspense } from 'react';
@@ -51,6 +52,7 @@ function App() {
 					</div>
 					<div className='contents'>
 						{/* <Banner /> */}
+
 						<LazyBanner />
 						<section>
 							<div>김교철 & 고유라</div>
@@ -74,6 +76,8 @@ function App() {
 							setModalOpen={setPhoneOpen}
 							modalOpen={phoneOpen}
 						/>
+						<Guestbook />
+
 						<Footer />
 					</div>
 				</main>
