@@ -59,9 +59,10 @@ const Gallery = (props) => {
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
-		autoplay: false,
-		// speed: 3000,
-		// autoplaySpeed: 0,
+		autoplay: true,
+		speed: 3000,
+		autoplaySpeed: 3000,
+		pagination: false,
 		cssEase: 'linear',
 		arrows: false,
 	};

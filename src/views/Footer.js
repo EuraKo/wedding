@@ -10,12 +10,15 @@ const Footer = () => {
 	return (
 		<footer>
 			<div className={styles.link_box}>
-				<button onClick={() => shareKakao('https://eurako.github.io/wedding/')}>
+				<button
+					onClick={() =>
+						shareKakao('https://wedding-invite-5c680.firebaseapp.com/')
+					}>
 					<img className={styles.logo} src={kakao} alt={'Kakao Logo'} />
 				</button>
 				<button>
 					<CopyToClipboard
-						text={'https://eurako.github.io/wedding/'}
+						text={'https://wedding-invite-5c680.firebaseapp.com/'}
 						onCopy={() => {
 							alert('청첩장 주소가 복사됐습니다.');
 						}}>
