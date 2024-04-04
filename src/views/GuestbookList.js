@@ -13,6 +13,7 @@ const GuestbookList = (props) => {
 			.then((snapshot) => {
 				if (snapshot.exists()) {
 					const dataArr = Object.values(snapshot.val());
+					// 최신순 정렬
 					const reverse = [];
 					for (let i = dataArr.length - 1; i >= 0; i--) {
 						reverse.push(dataArr[i]);

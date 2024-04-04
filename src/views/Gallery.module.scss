@@ -79,7 +79,11 @@
 	}
 	:global {
 		.slick-list {
-			background-color: #fff;
+			// background-color: #fff;
+		}
+		.slick-track {
+			display: flex;
+			align-items: center;
 		}
 		.slick-dots {
 			bottom: -44px;
