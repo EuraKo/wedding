@@ -2,7 +2,7 @@ import { useState } from 'react';
 import GuestbookList from './GuestbookList';
 import { uid } from 'uid';
 import { db } from '../firebase';
-import { ref, set } from 'firebase/database';
+import { ref, set, push } from 'firebase/database';
 import styles from './Guestbook.module.scss';
 
 const GuestBook = () => {
@@ -26,8 +26,7 @@ const GuestBook = () => {
 			const dateFormat = `${today.getFullYear()}.${
 				today.getMonth() + 1
 			}.${today.getDate()} ${today.getHours()}:${today.getMinutes()}`;
-			console.log(dateFormat);
-			set(ref(db, 'test/' + uuid), {
+			push(ref(db, 'test/'), {
 				todo,
 				name,
 				uuid,

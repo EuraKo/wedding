@@ -1,4 +1,4 @@
-import { ref, child, get } from 'firebase/database';
+import { ref, child, get, query, orderByChild } from 'firebase/database';
 import { db } from '../firebase';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -6,13 +6,19 @@ import styles from './Guestbook.module.scss';
 
 const GuestbookList = (props) => {
 	const [list, setList] = useState([]);
+
 	const readOne = () => {
 		const dbRef = ref(db);
 		get(child(dbRef, '/test'))
 			.then((snapshot) => {
 				if (snapshot.exists()) {
-					console.log(Object.entries(snapshot.val()));
-					setList(Object.entries(snapshot.val()));
+					const dataArr = Object.values(snapshot.val());
+					const reverse = [];
+					for (let i = dataArr.length - 1; i >= 0; i--) {
+						reverse.push(dataArr[i]);
+					}
+
+					setList(reverse);
 					props.setConfirm(false);
 				} else {
 					console.log('No data available');
@@ -32,13 +38,13 @@ const GuestbookList = (props) => {
 		<ul className={styles.guest_list}>
 			{list.map((value) => {
 				return (
-					<li key={value[0]}>
+					<li key={value.uuid}>
 						<div className={styles.info}>
-							<div className={styles.name}>{value[1].name}</div>
-							<div className={styles.date}>{value[1].date}</div>
+							<div className={styles.name}>{value.name}</div>
+							<div className={styles.date}>{value.date}</div>
 						</div>
 
-						<div className={styles.cont}>{value[1].todo}</div>
+						<div className={styles.cont}>{value.todo}</div>
 					</li>
 				);
 			})}
