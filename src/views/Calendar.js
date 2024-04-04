@@ -27,7 +27,11 @@ const Calendar = () => {
 							</div>
 						);
 					}
-					return <div className={styles.day}>{day}</div>;
+					return (
+						<div className={styles.day} key={day}>
+							{day}
+						</div>
+					);
 				})}
 			</div>
 		</section>
