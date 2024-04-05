@@ -9,6 +9,7 @@ const GuestbookList = (props) => {
 
 	const readOne = () => {
 		const dbRef = ref(db);
+
 		get(child(dbRef, '/test'))
 			.then((snapshot) => {
 				if (snapshot.exists()) {

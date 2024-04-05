@@ -49,7 +49,6 @@ const GuestBook = () => {
 					placeholder='이름'
 					value={name}
 					onChange={handleNameChange}
-					required
 				/>
 				<textarea
 					name='guest'
@@ -58,7 +57,6 @@ const GuestBook = () => {
 					placeholder='축하 한마디'
 					value={todo}
 					onChange={handleTodoChange}
-					required
 				/>
 
 				<button className={styles.book_btn} onClick={writeData}>

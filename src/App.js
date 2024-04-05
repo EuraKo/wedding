@@ -29,7 +29,7 @@ function App() {
 		if (loading) {
 			setTimeout(() => {
 				setOpen('loading_main');
-			}, 100);
+			}, 1000);
 		} else {
 			setOpen('loading_main_finish');
 		}
@@ -38,7 +38,7 @@ function App() {
 		if (open === 'loading_main') {
 			setTimeout(() => {
 				setLoading(false);
-			}, 2000);
+			}, 1500);
 		}
 	}, [open]);
 	return (
