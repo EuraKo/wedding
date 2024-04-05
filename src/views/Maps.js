@@ -22,6 +22,7 @@ const MapNaverDefault = () => {
 			position: location,
 			map,
 		});
+		// 맵좌표이상 -> 리사이즈시켜 맞추기
 		setTimeout(() => {
 			window.dispatchEvent(new Event('resize'));
 		}, 3000);
