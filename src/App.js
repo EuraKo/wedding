@@ -27,11 +27,11 @@ function App() {
 
 	useEffect(() => {
 		if (loading) {
-			setOpen('loading_main');
-		} else {
 			setTimeout(() => {
-				setOpen('loading_main_finish');
+				setOpen('loading_main');
 			}, 100);
+		} else {
+			setOpen('loading_main_finish');
 		}
 	}, [loading]);
 	useEffect(() => {

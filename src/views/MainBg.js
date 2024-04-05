@@ -6,13 +6,9 @@ const MainBg = (props) => {
 	const [loading, setLoading] = useState('');
 	useEffect(() => {
 		if (props.loading) {
-			setTimeout(() => {
-				setLoading('bg_loading');
-			}, 1000);
+			setLoading('bg_loading');
 		} else {
-			setTimeout(() => {
-				setLoading('bg_finish_loading');
-			}, 1000);
+			setLoading('bg_finish_loading');
 		}
 	}, [props.loading]);
 	return (

@@ -63,7 +63,8 @@ main {
 		color: #383d2c;
 		font-family: 'Cafe24 OnePrettyNight', serif;
 		opacity: 0;
-		transition: opacity 1s;
+		visibility: hidden;
+		transition: opacity 3s;
 	}
 
 	.contents {
@@ -74,6 +75,7 @@ main {
 	&.loading_main {
 		.intro {
 			opacity: 1;
+			visibility: visible;
 		}
 		.contents {
 		}

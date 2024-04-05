@@ -1,4 +1,4 @@
-import { ref, child, get, query, orderByChild } from 'firebase/database';
+import { ref, child, get, query, limitToLast } from 'firebase/database';
 import { db } from '../firebase';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -32,6 +32,8 @@ const GuestbookList = (props) => {
 
 	useEffect(() => {
 		if (props.confirm) readOne();
+		const recentPostsRef = query(ref(db, 'test'), limitToLast(2));
+		console.log(recentPostsRef);
 		return readOne();
 	}, [props.confirm]);
 	return (
