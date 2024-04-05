@@ -12,14 +12,19 @@ const MapNaverDefault = () => {
 		const mapOptions = {
 			center: location,
 			zoom: 17,
-			zoomControl: true,
+			zoomControl: false,
 		};
 
 		const map = new naver.maps.Map(mapElement.current, mapOptions);
+		console.log(map.getCenter());
+
 		new naver.maps.Marker({
 			position: location,
 			map,
 		});
+		setTimeout(() => {
+			window.dispatchEvent(new Event('resize'));
+		}, 3000);
 	}, []);
 
 	return (

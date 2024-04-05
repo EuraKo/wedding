@@ -2,9 +2,7 @@ const { Kakao } = window;
 
 export const shareKakao = (route, title) => {
 	// url이 id값에 따라 변경되기 때문에 route를 인자값으로 받아줌
-	console.log('kakao', window);
 	if (Kakao) {
-		console.log('kakao', window.Kakao);
 		console.log(Kakao.isInitialized());
 		if (!Kakao.isInitialized()) {
 			Kakao.init('732ec1f357e9a77fa8730cca4846c18c'); // 카카오에서 제공받은 javascript key를 넣어줌 -> .env파일에서 호출시킴
