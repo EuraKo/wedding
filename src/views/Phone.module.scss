@@ -72,10 +72,10 @@
 	&:hover {
 		img {
 			transform-origin: bottom;
-			animation: face 1s ease-in-out infinite;
-			-moz-animation: face 1s ease-in-out infinite;
-			-webkit-animation: face 1s ease-in-out infinite;
-			-o-animation: face 1s ease-in-out infinite;
+			animation: face 1s linear infinite;
+			-moz-animation: face 1s linear infinite;
+			-webkit-animation: face 1s linear infinite;
+			-o-animation: face 1s linear infinite;
 		}
 	}
 	img {

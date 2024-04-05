@@ -12,7 +12,7 @@ const MainBg = (props) => {
 		} else {
 			setTimeout(() => {
 				setLoading('bg_finish_loading');
-			});
+			}, 1000);
 		}
 	}, [props.loading]);
 	return (

@@ -29,11 +29,10 @@ const GuestbookList = (props) => {
 				console.error(error);
 			});
 	};
-	useEffect(() => {
-		readOne();
-	}, []);
+
 	useEffect(() => {
 		if (props.confirm) readOne();
+		return readOne();
 	}, [props.confirm]);
 	return (
 		<ul className={styles.guest_list}>
