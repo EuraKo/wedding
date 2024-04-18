@@ -1,4 +1,5 @@
 import './App.css';
+import MainBg from './views/MainBg';
 import Calendar from './views/Calendar';
 import Gallery from './views/Gallery';
 import GalleryModal from './views/GalleryModal';
@@ -44,8 +45,8 @@ function App() {
 	return (
 		<div className='App'>
 			<Suspense fallback={<div></div>}>
-				{/* <MainBg loading={loading} /> */}
-				<LazyMainBg loading={loading} />
+				<MainBg loading={loading} />
+				{/* <LazyMainBg loading={loading} /> */}
 				<main className={open}>
 					<div className='intro'>
 						김교철 <div className='small'>그리고</div> 고유라

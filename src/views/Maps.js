@@ -16,7 +16,6 @@ const MapNaverDefault = () => {
 		};
 
 		const map = new naver.maps.Map(mapElement.current, mapOptions);
-		console.log(map.getCenter());
 
 		new naver.maps.Marker({
 			position: location,
