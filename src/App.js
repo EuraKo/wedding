@@ -1,5 +1,6 @@
 import './App.css';
 import MainBg from './views/MainBg';
+import Banner from './views/Banner';
 import Calendar from './views/Calendar';
 import Gallery from './views/Gallery';
 import GalleryModal from './views/GalleryModal';
@@ -14,8 +15,6 @@ import Guestbook from './views/Guestbook';
 import Footer from './views/Footer';
 
 import React, { useEffect, useState, Suspense } from 'react';
-const LazyMainBg = React.lazy(() => import('./views/MainBg'));
-const LazyBanner = React.lazy(() => import('./views/Banner'));
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -25,7 +24,21 @@ function App() {
 
 	const [phoneOpen, setPhoneOpen] = useState(false);
 	const [type, setType] = useState('');
+	useEffect(() => {
+		function preloading(imageArray) {
+			console.log(imageArray);
+			imageArray.forEach((url) => {
+				const image = new Image();
+				image.src = url;
+			});
+		}
 
+		preloading([
+			'../imgs/flowers.png',
+			'../imgs/leaves.png',
+			'../imgs/face_main1.png',
+		]);
+	}, []);
 	useEffect(() => {
 		if (loading) {
 			setTimeout(() => {
@@ -52,9 +65,7 @@ function App() {
 						김교철 <div className='small'>그리고</div> 고유라
 					</div>
 					<div className='contents'>
-						{/* <Banner /> */}
-
-						<LazyBanner />
+						<Banner />
 						<section>
 							<div>김교철 & 고유라</div>
 							<div>2024.06.09 (일) 오전 11시</div>

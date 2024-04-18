@@ -11,17 +11,7 @@ const MainBg = (props) => {
 			setLoading('bg_finish_loading');
 		}
 	}, [props.loading]);
-	useEffect(() => {
-		function preloading(imageArray) {
-			console.log(imageArray);
-			imageArray.forEach((url) => {
-				const image = new Image();
-				image.src = url;
-			});
-		}
 
-		preloading(['../imgs/flowers.png', '../imgs/leaves.png']);
-	}, []);
 	return (
 		<div className={`${styles.intro}  ${styles[loading]}`}>
 			<img
