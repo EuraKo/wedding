@@ -15,6 +15,10 @@ import Phone from './views/Phone';
 import Guestbook from './views/Guestbook';
 import Footer from './views/Footer';
 
+import main from './imgs/main.webp';
+import flower from './imgs/flowers.webp';
+import leaves from './imgs/leaves.webp';
+
 import React, { useEffect, useState, Suspense } from 'react';
 
 function App() {
@@ -28,25 +32,21 @@ function App() {
 	const [phoneOpen, setPhoneOpen] = useState(false);
 	const [type, setType] = useState('');
 
-	// function preloading(imageArray) {
-	// 	imageArray.forEach((url) => {
-	// 		let image = new Image();
-	// 		image.src = url;
-	// 		image.onload = () => {
-	// 			image = null;
-	// 			console.log('aaa', url);
-	// 		};
-	// 	});
-	// 	setImgLoading(true);
-	// }
+	function preloading(imageArray) {
+		imageArray.forEach((url, idx) => {
+			let image = new Image();
+			image.src = url;
+			image.onload = (e) => {
+				console.log('aaa', url, idx);
+				image = null;
+				setImgLoading(idx + 1);
+			};
+		});
+	}
 
-	// useEffect(() => {
-	// 	preloading([
-	// 		// '../imgs/flowers.png',
-	// 		'../imgs/leaves.png',
-	// 		'../imgs/face_main1.png',
-	// 	]);
-	// }, []);
+	useEffect(() => {
+		preloading([flower, leaves, main]);
+	}, [imgLoading]);
 
 	useEffect(() => {
 		if (loadingStart) {
@@ -78,13 +78,15 @@ function App() {
 					loading={loading}
 					imgLoading={imgLoading}
 					setImgLoading={setImgLoading}
+					flower={flower}
+					leaves={leaves}
 				/>
 				<main className={open}>
 					<div className='intro'>
 						김교철 <div className='small'>그리고</div> 고유라
 					</div>
 					<div className='contents'>
-						<Banner setImgLoading={setImgLoading} imgLoading={imgLoading} />
+						<Banner main={main} />
 						<section>
 							<div>김교철 & 고유라</div>
 							<div>2024.06.09 (일) 오전 11시</div>

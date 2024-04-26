@@ -18,45 +18,38 @@ const MainBg = (props) => {
 	return (
 		<div className={`${styles.intro}  ${styles[loading]}`}>
 			<img
-				src={leaves}
+				src={props.leaves}
 				className={`${styles.leaves_t_l_r} ${styles.front}`}
 				alt=''
-				onLoad={(e) => {
-					props.setImgLoading(props.imgLoading + 1);
-				}}
 			/>
 			<img
-				src={flower}
+				src={props.flower}
 				className={`${styles.flower_t_l} ${styles.front}`}
 				// style={{ transform: `rotate(105deg) translateY(100%)` }}
 				alt=''
-				onLoad={(e) => {
-					console.log('aa', e);
-					props.setImgLoading(props.imgLoading + 1);
-				}}
 			/>
 			<img
-				src={flower}
+				src={props.flower}
 				className={`${styles.flower_b_l} ${styles.front}`}
 				alt=''
 			/>
 			<img
-				src={leaves}
+				src={props.leaves}
 				className={`${styles.leaves_b_r} ${styles.front}`}
 				alt=''
 			/>
 			<img
-				src={flower}
+				src={props.flower}
 				className={`${styles.flower_b_r} ${styles.front}`}
 				alt=''
 			/>
 			<img
-				src={leaves}
+				src={props.leaves}
 				className={`${styles.leaves_t_l_b} ${styles.back}`}
 				alt=''
 			/>
 			<img
-				src={flower}
+				src={props.flower}
 				className={`${styles.flower_t_r} ${styles.back}`}
 				alt=''
 			/>
