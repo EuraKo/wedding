@@ -1,3 +1,7 @@
+.bg_hidden {
+	display: none;
+	visibility: hidden;
+}
 .bg_loading {
 	.front {
 		z-index: 100;
@@ -29,7 +33,7 @@
 		&.leaves_t_l_r {
 			width: 300px;
 			transform: rotate(164deg) translateY(100%);
-			transition-delay: 500ms;
+			transition-delay: 600ms;
 			top: -106px;
 			left: -68px;
 		}
@@ -57,7 +61,7 @@
 		&.leaves_b_r {
 			width: 260px;
 			transform: rotate(63deg) translateX(100%);
-			transition-delay: 500ms;
+			transition-delay: 600ms;
 			bottom: -9px;
 			right: -73px;
 		}

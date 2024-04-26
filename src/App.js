@@ -1,4 +1,5 @@
 import './App.css';
+import LoadingPage from './views/Loading';
 import MainBg from './views/MainBg';
 import Banner from './views/Banner';
 import Calendar from './views/Calendar';
@@ -17,55 +18,73 @@ import Footer from './views/Footer';
 import React, { useEffect, useState, Suspense } from 'react';
 
 function App() {
-	const [loading, setLoading] = useState(true);
+	const [imgLoading, setImgLoading] = useState(0); // 이미지가 로드 개수
+	const [loadingStart, setLoadingStart] = useState(false); // 이미지 모두 로드 후
+	const [loading, setLoading] = useState(true); // 현재 꽃화면이 종료되면 false
 	const [open, setOpen] = useState('');
 	const [selectImg, setSelectImg] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
 
 	const [phoneOpen, setPhoneOpen] = useState(false);
 	const [type, setType] = useState('');
-	useEffect(() => {
-		function preloading(imageArray) {
-			console.log(imageArray);
-			imageArray.forEach((url) => {
-				const image = new Image();
-				image.src = url;
-			});
-		}
 
-		preloading([
-			'../imgs/flowers.png',
-			'../imgs/leaves.png',
-			'../imgs/face_main1.png',
-		]);
-	}, []);
+	// function preloading(imageArray) {
+	// 	imageArray.forEach((url) => {
+	// 		let image = new Image();
+	// 		image.src = url;
+	// 		image.onload = () => {
+	// 			image = null;
+	// 			console.log('aaa', url);
+	// 		};
+	// 	});
+	// 	setImgLoading(true);
+	// }
+
+	// useEffect(() => {
+	// 	preloading([
+	// 		// '../imgs/flowers.png',
+	// 		'../imgs/leaves.png',
+	// 		'../imgs/face_main1.png',
+	// 	]);
+	// }, []);
+
 	useEffect(() => {
-		if (loading) {
-			setTimeout(() => {
+		if (loadingStart) {
+			if (loading) {
 				setOpen('loading_main');
-			}, 1000);
-		} else {
-			setOpen('loading_main_finish');
+			} else {
+				setOpen('loading_main_finish');
+			}
 		}
-	}, [loading]);
+	}, [loadingStart, loading]);
+
 	useEffect(() => {
-		if (open === 'loading_main') {
+		console.log('aa', imgLoading);
+		if (imgLoading === 3) {
+			setLoadingStart(true);
 			setTimeout(() => {
 				setLoading(false);
-			}, 1500);
+			}, 2000);
 		}
-	}, [open]);
+	}, [imgLoading]);
+
 	return (
 		<div className='App'>
-			<Suspense fallback={<div></div>}>
-				<MainBg loading={loading} />
-				{/* <LazyMainBg loading={loading} /> */}
+			<Suspense fallback={<LoadingPage />}>
+				{/* 꽃 나뭇잎 이미지 첫 로딩 다되고 화면 뜨게 하기 */}
+				{!loadingStart && <LoadingPage />}
+				<MainBg
+					loadingStart={loadingStart}
+					loading={loading}
+					imgLoading={imgLoading}
+					setImgLoading={setImgLoading}
+				/>
 				<main className={open}>
 					<div className='intro'>
 						김교철 <div className='small'>그리고</div> 고유라
 					</div>
 					<div className='contents'>
-						<Banner />
+						<Banner setImgLoading={setImgLoading} imgLoading={imgLoading} />
 						<section>
 							<div>김교철 & 고유라</div>
 							<div>2024.06.09 (일) 오전 11시</div>
@@ -93,6 +112,7 @@ function App() {
 						<Footer />
 					</div>
 				</main>
+
 				{modalOpen && (
 					<GalleryModal
 						selectImg={selectImg}
