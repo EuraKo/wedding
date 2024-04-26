@@ -1,4 +1,3 @@
-import main from '../imgs/main.webp';
 import eu from '../imgs/face_main1.png';
 import kyo from '../imgs/face_main2.png';
 import style from './Banner.module.scss';

@@ -37,7 +37,6 @@ function App() {
 			let image = new Image();
 			image.src = url;
 			image.onload = (e) => {
-				console.log('aaa', url, idx);
 				image = null;
 				setImgLoading(idx + 1);
 			};
