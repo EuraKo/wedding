@@ -87,7 +87,19 @@ function App() {
 					<div className='contents'>
 						<Banner main={main} />
 						<section>
-							<div>김교철 & 고유라</div>
+							<div className='name_area'>
+								<div className='name_box'>
+									<span className='parents'>김영호 · 황영화</span>
+									<span className='my_position'>의 장남</span>
+									<span className='my_name'>교철</span>
+								</div>
+								<div className='name_box'>
+									<span className='parents'>고태원 · 김춘순</span>
+									<span className='my_position'>의 차녀</span>
+									<span className='my_name'>유라</span>
+								</div>
+							</div>
+
 							<div>2024.06.09 (일) 오전 11시</div>
 							<div> 발산 더 베뉴지 2층 베뉴지홀</div>
 						</section>

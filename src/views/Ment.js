@@ -1,6 +1,6 @@
 const Ment = () => {
 	return (
-		<section>
+		<section className='ment_section'>
 			<h2>이제, 결혼합니다.</h2>
 			<div>
 				포근한 봄바람과 함께 시작된 우리의 인연

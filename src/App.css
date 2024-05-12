@@ -53,3 +53,22 @@
 	width: 10px;
 	height: 10px;
 }
+.name_area {
+	margin-bottom: 30px;
+}
+.name_box {
+	margin-bottom: 5px;
+}
+.parents {
+}
+.my_position {
+	font-size: 12px;
+}
+.my_name {
+	font-weight: bold;
+	margin-left: 10px;
+}
+.ment_section {
+	background: #f0e5df;
+	padding: 1px 0 20px;
+}
