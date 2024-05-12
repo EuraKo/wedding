@@ -105,6 +105,8 @@ function App() {
 						</section>
 						<Ment />
 						<Calendar />
+						<Reception />
+
 						<Gallery
 							setSelectImg={setSelectImg}
 							setModalOpen={setModalOpen}
@@ -113,7 +115,6 @@ function App() {
 						<Way>
 							<Maps />
 						</Way>
-						<Reception />
 						<Money />
 						<Phone
 							setType={setType}
